@@ -5,12 +5,12 @@
     <title>mCAPTCHA 2 test</title>
     <script type="text/javascript">
       function mCAPTCHA() {
-        var mCAPTCHA_digitCount = 8
+        var mCAPTCHA_digitCount = 8;
         var number = Math.floor(Math.random() * Math.pow(10, mCAPTCHA_digitCount));
         var mCAPTCHA_input = prompt('This website is protected by mCAPTCHA 2.\nPlease, enter in the following number:\n' + number);
         if (mCAPTCHA_input == number) {
           alert('mCAPTCHA approved your input. Action unblocked.');
-          /* insert function name here */();
+          post();
         } else {
           alert('Incorrect! Action blocked. Please try again.');
         }
